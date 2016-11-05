@@ -1,0 +1,24 @@
+Currencies
+
+Convert one or more balances quickly and effortlessly into any number of currencies. It has never been this easy.
+
+url: http://simplydo.com/currencies/
+sources: https://github.com/SimplyDo/currencies
+
+Created by Simply Do: http://simplydo.com
+
+
+
+Uses various libraries / framework under their respective licenses: 
+
+AngularJS by Google - http://angularjs.org/
+Twitter Bootstrapped - http://twitter.github.com/bootstrap/
+
+Exchange rates powered by Openexchangerates:
+Disclaimer: This data is collected from various providers and provided free of charge for informational purposes only, with no guarantee whatsoever of accuracy, validity, availability, or fitness for any purpose; use at your own risk. Other than that, have fun! More info: http://openexchangerates.org/terms/
+License: Data collected from various providers with public-facing APIs; copyright may apply; not for resale; no warranties given. Full license info: http://openexchangerates.org/license/
+
+
+Instructions: 
+
+Simply point a web server to the root directory of this repository and view in any modern browser. 

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="gqb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GQB</title>
+    <!-- ref:style style/app.style -->
+    <link rel="stylesheet" href="style/admin.css"/>
+    <link rel="stylesheet" href="style/app.css"/>
+    <link rel="stylesheet" href="style/bootstrap.css"/>
+    <link rel="stylesheet" href="style/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="style/graph.css"/>
+    <link rel="stylesheet" href="style/query.css"/>
+    <link rel="stylesheet" href="style/help.css"/>
+    <!-- endref -->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavigationCtrl">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#/query" ng-click="resetQuery()">GQB</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li ng-class="navClass('query')"><a href="#/query" ng-click="resetQuery()">Query</a></li>
+              <li ng-class="navClass('admin')"><a href="#/admin">Admin</a></li>
+              <li ng-class="navClass('help')"><a href="#/help">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div ui-view></div>
+    
+    <!-- ref:js lib/libs.js -->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angularui/angular-ui-states.js"></script>
+    <script src="lib/underscore/underscore.js"></script>
+    <!-- endref -->
+
+    <!-- ref:js gdsl.js -->
+    <script src="app.config.js"></script>
+
+
+    <script src="services/dslgenerator/trailsDslGenerator.factory.js"></script>
+    <script src="services/dslgenerator/dummyDslGenerator.factory.js"></script>
+    <script src="services/path.factory.js"></script>
+    <script src="services/propertyParser.factory.js"></script>
+    <script src="services/propertyTypeChecker.factory.js"></script>
+    <script src="services/queryBuilder.factory.js"></script>
+    <script src="services/queryHelper.factory.js"></script>
+    <script src="services/queryModel.factory.js"></script>
+    <script src="services/jsonQueryParser.factory.js"></script>
+    <script src="services/trailsWebService.factory.js"></script>
+    <script src="services/resultHelper.factory.js"></script>
+    <script src="services/localStorage.factory.js"></script>
+    <script src="services/history.factory.js"></script>
+    <script src="services/graph.factory.js"></script>
+    <script src="services/forceGraphHelper.factory.js"></script>
+    <script src="services/layoutStorage.factory.js"></script>
+    <script src="services/schemaComparator.factory.js"></script>
+    <script src="services/enums.factory.js"></script>
+    <script src="services/event.factory.js"></script>
+    
+    <script src="controllers/queryCtrl.controller.js"></script>
+    <script src="controllers/graphCtrl.controller.js"></script>
+    <script src="controllers/propertyFilterCtrl.controller.js"></script>
+    <script src="controllers/breadcrumbsCtrl.controller.js"></script>
+    <script src="controllers/queryFieldCtrl.controller.js"></script>
+    <script src="controllers/resultViewCtrl.controller.js"></script>
+    <script src="controllers/navigationCtrl.controller.js"></script>
+    <script src="controllers/adminCtrl.controller.js"></script>
+    
+    <script src="directives/gqbTree.directive.js"></script>
+    <script src="directives/gqbForceGraph.directive.js"></script>
+    <script src="directives/gqbZoom.directive.js"></script>
+    <script src="directives/gqbDrag.directive.js"></script>
+    <script src="directives/typeCheck.directive.js"></script>
+    <!-- endref -->
+  </body>
+</html>
