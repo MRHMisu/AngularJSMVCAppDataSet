@@ -3,17 +3,17 @@ angular.module('CafeTownsend',['ngRoute']);
 angular.module('CafeTownsend').config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/login', {
         templateUrl: "views/login.view.html",
-        controller: "LoginController",
+        controller: "loginController",
         controllerAs: 'vm'
     });
     $routeProvider.when('/employee', {
         templateUrl: "views/employee.view.html",
-        controller: "EmployeeController",
+        controller: "employeeController",
         controllerAs: 'vm'
     });
     $routeProvider.when('/employee/:id', {
         templateUrl: "views/employeeEdit.view.html",
-        controller: "EmployeeEditController",
+        controller: "employeeEditController",
         controllerAs: 'vm'
     });
     $routeProvider.otherwise({redirectTo:'/employee'});
