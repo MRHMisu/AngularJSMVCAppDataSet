@@ -1,4 +1,4 @@
-(function (angular) {
+(function () {
     'use strict';
 
     function constructor($routeParams) {
@@ -90,7 +90,7 @@
         }
 
         function renderStack() {
-            vm.renderStackToCanvas(vm.deck.slices);
+            renderStackToCanvas(vm.deck.slices);
         }
 
         function resetCanvas() {
@@ -204,8 +204,7 @@
 
     constructor.$inject = ['$routeParams'];
     angular.module('lifeStacks').controller('stackController', constructor);
-
-
-})(window.angular);
+    
+})();
 
 

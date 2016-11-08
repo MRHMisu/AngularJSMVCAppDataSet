@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('lifeStacks', ['ngRoute']);
-
 angular.module('lifeStacks').config(function ($routeProvider) {
 
     $routeProvider.when('/stack/:stack', {
