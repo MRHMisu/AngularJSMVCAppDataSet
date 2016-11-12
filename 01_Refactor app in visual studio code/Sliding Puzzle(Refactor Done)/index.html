@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="puzzleApp">
+<head>
+    <title>AngularJS puzzle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="services/slidingPuzzle.factory.js"></script>
+    <script type="text/javascript" src="services/wordSearchPuzzle.factory.js"></script>
+    <script type="text/javascript" src="controllers/slidingAdvanced.controller.js"></script>
+    <script type="text/javascript" src="controllers/wordSearch.controller.js"></script>
+    <script type="text/javascript" src="directives/slidingPuzzle.directive.js"></script>
+    <script type="text/javascript" src="directives/wordSearchPuzzle.directive.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/styles.css"/>
+
+</head>
+<body>
+<div ng-view></div>
+</body>
+</html>

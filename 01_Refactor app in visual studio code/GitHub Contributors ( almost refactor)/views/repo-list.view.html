@@ -1,0 +1,35 @@
+<div ng-controller="repositoryListController as vm">
+    <h2>Public Repositories</h2>
+
+    <ul class="repos">
+        <li ng-repeat="repo in vm.repos.data | orderBy:'-watchers'" class="repo yui3-g">
+            <div class="repo-name yui3-u-2-3">
+                <h3>
+                    <a href="#/github/{{vm.repo.full_name}}/">{{vm.repo.name}}</a>
+                </h3>
+                <p class="repo-desc">{{vm.repo.description}}</p>
+            </div>
+            <div class="repo-stats yui3-u-1-3">
+                <ul class="yui3-g">
+                    <li class="repo-lang yui3-u-1-3">
+                        <b>{{vm.repo.language}}</b>
+                    </li>
+                    <li class="repo-watchers yui3-u-1-3">
+                        <b>{{vm.repo.watchers}}</b>
+                        <span>
+                            <ng-pluralize count="vm.repo.watchers" when="vm.watchForms">
+                            </ng-pluralize>
+                        </span>
+                    </li>
+                    <li class="repo-forks yui3-u-1-3">
+                        <b>{{vm.repo.forks}}</b>
+                        <span>
+                            <ng-pluralize count="vm.repo.forks" when="vm.forkForms">
+                            </ng-pluralize>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

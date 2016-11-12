@@ -1,0 +1,15 @@
+<div>
+    <div id="word-search">
+        <ul class="words">
+            <li ng-repeat="word in vm.puzzle.words" ng-class="{'found': word.found}">
+                {{word.name}}
+            </li>
+        </ul>
+        <word-search-puzzle matrix="vm.matrix" words="vm.words" api="vm.puzzle"></word-search-puzzle>
+        <div class="status">
+            <button ng-click="vm.puzzle.solve()" ng-show="!vm.puzzle.solved" class="solve">solve</button>
+            <strong ng-show="vm.puzzle.solved" ng-show="vm.puzzle.solved">Solved!</strong>
+        </div>
+    </div>
+
+</div>
