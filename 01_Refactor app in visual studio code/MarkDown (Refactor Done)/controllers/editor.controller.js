@@ -8,7 +8,7 @@
 
         var windowHeight = $(window).height();
 
-        vm.markDownDocument = "";
+        vm.markDownDocumentR = "";
 
         vm.showSource = false;
 

@@ -36,7 +36,7 @@ function stacksController($routeParams) {
 
     // --------------------- Helper Functions ----------------------------
 
-    vm.convertCanvasToImage = function () {
+    vm.convertCanvasToImagee = function () {
         return c.toDataURL("image/png");
     }
 

@@ -2,6 +2,7 @@
     'use strict';
 
     function constructor(openExchangeRates) {
+		
         var vm = this;
         vm.balances = new Array();
         function inti() {
