@@ -8,7 +8,7 @@
 
         var windowHeight = $(window).height();
 
-        vm.markDownDocumentR = "";
+        vm.markDownDocument = "";
 
         vm.showSource = false;
 
@@ -30,7 +30,7 @@
         }
 
         vm.resize = resize;
-        vm.toggleSource = toggleSource;
+        vm.toggleSourcee = toggleSource;
         vm.convertMarkDown = convertMarkDown;
         vm.resize();
 

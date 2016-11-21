@@ -38,9 +38,9 @@
             else
                 vm.encoded = algo.encode(vm.raw);
         }
-        vm.readonly = algo.readonly;
+        vm.readonlyy = algo.readonly;
         vm.name = algo.name;
-        vm.change = change;
+        vm.changee = change;
     }
 
     angular.module('kodigon').controller('algorithmController', constructor);
