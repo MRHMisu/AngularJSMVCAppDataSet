@@ -1,17 +1,18 @@
-(function() {
+(function () {
     'use strict';
     function constructor() {
         var directive = {
-            templateUrl:'views/studentDetails.view.html',
+            templateUrl: "views/studentEntry.view.html",
             restrict: 'EA',
             replace: 'true',
             scope:{},
-            bindToController: true,
-            controller:'studentDetailsController',
+            bindToController:true,
+            controller: 'studentEntryController',
             controllerAs: 'vm',
         };
         return directive;
     }
+
     constructor.$inject = [];
-    angular.module('shoppingList').directive('productDetails', constructor);
+    angular.module('studentManage').directive('studentEntry', constructor);
 })();

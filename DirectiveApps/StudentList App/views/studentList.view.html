@@ -1,5 +1,11 @@
 <div>
-    <student name="Mahesh"></student>
-    <br/>
-    <student name="Piyush"></student>
+    <ul>
+        <li ng-repeat="student in vm.students">
+            {{student.name}},{{student.roll}}
+            <button ng-click="vm.getDetails($index)">Details</button>
+            <button ng-click="vm.removeStudent($index)"/>
+            Remove</button>
+        </li>
+    </ul>
+    <product-entry></product-entry>
 </div>

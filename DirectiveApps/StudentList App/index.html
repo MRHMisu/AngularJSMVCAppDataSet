@@ -1,19 +1,18 @@
-﻿<html>
+<!DOCTYPE html>
+<html >
+<script src="lib/angular.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="app.config.js"></script>
+<script src="controllers/studentList.controller.js"></script>
+<script src="controllers/studentDetails.controller.js"></script>
+<script src="controllers/studentEntry.controller.js"></script>
+<script src="services/studentList.service.js"></script>
+<script src="directives/student-delaits.directive.js"></script>
+<script src="directives/student-entry.directive.js"></script>
 
-<head>
-    <title>Student Management</title>
-    <script src="lib/angular.js"></script>
-    <script src="lib/angular-route.js"></script>
-    <script src="app.config.js"></script>
-    <script src="controllers/student.controller.js"></script>
-    <script src="directives/student.directive.js"></script>
-</head>
+<body ng-app="studentManage">
 
-<body>
-<h2>AngularJS Sample Application</h2>
+<div ng-view></div>
 
-<div ng-view>
-
-</div>
 </body>
 </html>

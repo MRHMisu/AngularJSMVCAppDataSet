@@ -2,17 +2,16 @@
     'use strict';
     function constructor() {
         var directive = {
-            templateUrl:'appVersion.view.html',
+            templateUrl:"views/studentDetails.view.html",
             restrict: 'EA',
             replace: 'true',
             scope:{},
             bindToController: true,
-            controller:'appVersionController',
+            controller:'studentDetailsController',
             controllerAs: 'vm',
         };
         return directive;
     }
     constructor.$inject = [];
-    angular.module('likedApp').directive('appVersion', constructor);
+    angular.module('studentManage').directive('studentDetails', constructor);
 })();
-
