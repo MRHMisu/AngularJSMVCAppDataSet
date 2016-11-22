@@ -1,9 +1,0 @@
-<div>
-  <ul>
-    <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">×</span></li>
-  </ul>
-  <input ng-model="addMe">
-  <button ng-click="addItem()">Add</button>
-  <p>{{errortext}}</p>
-</div>
-<p>Try to add the same item twice, and you will get an error message.</p>

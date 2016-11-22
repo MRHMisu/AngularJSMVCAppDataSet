@@ -1,0 +1,22 @@
+﻿<div class="container well" style="padding:50px">
+    <h2>Account Information</h2>
+    <table class="table">
+        <tr>
+            <td>User Name :</td>
+            <td ng-bind="user.UserName"></td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td ng-bind="user.Email"></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td ng-bind="user.Password"></td>
+        </tr>
+    </table>
+    <div class="form-group">
+        <button class="btn btn-primary" style="background-color:#3B5999;" ng-click="Edit()">Edit Account</button>
+    </div>
+</div>
+
+

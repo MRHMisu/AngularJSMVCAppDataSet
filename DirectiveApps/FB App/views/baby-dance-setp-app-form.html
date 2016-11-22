@@ -1,0 +1,52 @@
+﻿<div style="padding:50px" ng-show="appForm">
+    <div name="loginForm" class="modal show " tabindex="-1" role="dialog" aria-hidden="true" style="padding:50px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-center">Find Your Childhood Dance Step</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form col-md-12 center-block" method="post" id="mainform" name="mainAppForm">
+                        <div class="form-group">
+                            <input type="text" ng-model="UserName" ng-pattern="example.word" placeholder="Eg. Misu Be Imp" class="form-control" required="required" name="username">
+                        </div>
+                        <div ng-if="mainAppForm.username.$dirty">
+                            <div role="alert" style="margin-left:20px" class="text-danger">
+                                <span class="error" ng-show="mainAppForm.username.$error.required">
+                                    *** Name is required.
+                                </span>
+                                <span class="error" ng-show="mainAppForm.username.$error.pattern">
+                                    *** Name is a single world.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" ng-model="myColor" ng-options="gender as gender for gender in genders" required="required" placeholder="Gender">
+                                <option value="">Select Gender</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block" style="background-color:#3B5999;" ng-click="GetResult()">Get Result</button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true" ng-click="Cancel()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="padding:50px" ng-show="loadingImg">
+    <div class="container container-table">
+        <div class="row vertical-center-row">
+            <div class="text-center col-md-4 col-md-offset-4">
+                <img src="../images/util-imges/flickr.gif" />
+            </div>
+        </div>
+    </div>
+</div>

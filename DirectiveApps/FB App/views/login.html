@@ -1,0 +1,43 @@
+﻿<div>
+    <div name="loginForm" class="modal show" tabindex="-1" role="dialog" aria-hidden="true" style="padding:50px;background-color:#3B5999;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-center">Login</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form col-md-12 center-block" name="loginForm">
+                        <div class="form-group">
+                            <input name="mail" type="email" class="form-control input-lg" placeholder="Email" ng-model="Email" required>
+                        </div>
+                        <div ng-if="loginForm.mail.$dirty">
+                            <div role="alert" style="margin-left:20px" class="text-danger">
+                                <span class="error" ng-show="loginForm.mail.$error.required">
+                                    *** Email is required.
+                                </span>
+                                <span class="error" ng-show="loginForm.mail.$error.email">
+                                    *** Invalid email address.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control input-lg" placeholder="Password" ng-model="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block" style="background-color:#3B5999;" ng-click="login()">Log in</button>
+
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block" style="background-color:#3B5999;" ng-click="Register()">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

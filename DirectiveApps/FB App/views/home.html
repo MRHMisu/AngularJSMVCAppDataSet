@@ -1,0 +1,21 @@
+﻿<div class="well">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#3B5999">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar">Apps</span>
+                    <span class="icon-bar">Profile</span>
+                    <span class="icon-bar">About</span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" style="color:white">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="apps-selection-page">Apps</a></li>
+                    <li><a ui-sref="user-profile">Profile</a></li>
+                    <li><a ui-sref="login">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ui-view></div>
+</div>

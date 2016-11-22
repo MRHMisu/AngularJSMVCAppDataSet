@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!--Librery--->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.11.3-jquery.min.js"></script>
+    <link type="text/css" href="lib/bootstrap.min.css" rel="stylesheet" />
+    <!--------->
+    <!--Main App--->
+    <script src="scripts/app.js"></script>
+    <!---------->
+    <!--controller-->
+    <script src="controller/details-user-controller.js"></script>
+    <script src="controller/login-controller.js"></script>
+    <script src="controller/register-user-controller.js"></script>
+    <script src="controller/update-user-controller.js"></script>
+    <script src="controller/users-controller.js"></script>
+    <script src="controller/movie-poster-app-controller.js"></script>
+    <script src="controller/baby-dance-step-app-controller.js"></script>
+    <script src="controller/app-result-controller.js"></script>
+    <!---------->
+    <!--Services-->
+    <script src="service/user-crud-service.js"></script>
+    <script src="service/movie-poster-app-service.js"></script>
+    <script src="service/login-service.js"></script>
+    <!---------->
+    <!--derectives-->
+    <script src="directive/app-directives.js"></script>
+    <!---------->
+
+</head>
+<body ng-app="facebookApp">
+
+    <div ui-view></div>
+
+</body>
+</html>

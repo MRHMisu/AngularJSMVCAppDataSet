@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Welcome to LearnKode - A code learning platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+</head>
+<body ng-app="pluralizeExample">
+<div ng-controller="ExampleController">
+    <div class="container">
+        <input type="button" ng-click="count=count+1"/>
+        <ng-pluralize count="count" when="{'0': '',
+                       '1': 'You likes',
+                       '2': 'You and {{people[0].name}} likes.',
+                       '3': 'You , {{people[0].name}} and one other likes.',
+                       'other': 'You , {{people[0].name}} , {{people[1].name}} and {{count-2}} other people likes.'}">
+        </ng-pluralize>
+    </div>
+</div>
+<script>
+    var app = angular.module("pluralizeExample", []);
+    app.controller('ExampleController', ['$scope', function ($scope) {
+        $scope.count =0;
+        $scope.people = [{ name: "Messi" }, { name: "John" }];
+    }]);
+</script>
+</body>
+</html>
